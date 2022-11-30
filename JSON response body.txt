@@ -1,0 +1,41 @@
+**1) get All customers data :**
+
+Endpoint : localhost:8080/rewards
+Response body: 
+[
+    {
+        "customerName": "user1",
+        "previousOneMonthRewardPoints": 40,
+        "previousTwoMonthRewardPoints": 110,
+        "previousThreeMonthRewardPoints": 0,
+        "totalRewardPoints": 150
+    },
+    {
+        "customerName": "user2",
+        "previousOneMonthRewardPoints": 0,
+        "previousTwoMonthRewardPoints": 30,
+        "previousThreeMonthRewardPoints": 0,
+        "totalRewardPoints": 30
+    },
+    {
+        "customerName": "user3",
+        "previousOneMonthRewardPoints": 60,
+        "previousTwoMonthRewardPoints": 10,
+        "previousThreeMonthRewardPoints": 20,
+        "totalRewardPoints": 90
+    }
+]
+**
+2) get for single customer :**
+
+Endpoint : localhost:8080/rewards/user1
+
+Response body :
+
+{
+    "customerName": "user1",
+    "previousOneMonthRewardPoints": 40,
+    "previousTwoMonthRewardPoints": 110,
+    "previousThreeMonthRewardPoints": 0,
+    "totalRewardPoints": 150
+}
